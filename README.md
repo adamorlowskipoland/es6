@@ -9,4 +9,7 @@
     sanitize code before putting into inner.HTML
     
     
-3. 
+3. Iterables and looping        
+    for of loop     
+    loop through array.entries()        
+    loop through DOM collections
