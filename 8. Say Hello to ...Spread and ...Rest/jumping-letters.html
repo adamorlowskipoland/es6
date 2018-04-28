@@ -35,9 +35,14 @@
   <!-- use spread, map, querySelector to makes every single letter jump on hover -->
 
   const jump = document.querySelector('.jump');
-  jump.innerHTML = jump.textContent.split('').map(letter => {
-    return `<span>${letter}</span>`;
-  }).join('')
+  jump.innerHTML = [...jump.textContent]
+    .map(letter => `<span>${letter}</span>`)
+    .join('')
+
+  //  My first working solution
+  //  jump.innerHTML = jump.textContent.split('').map(letter => {
+  //    return `<span>${letter}</span>`;
+  //  }).join('')
 
 </script>
 </body>
